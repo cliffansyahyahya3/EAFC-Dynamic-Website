@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EA FC 24</title>
+	<link rel="stylesheet" href="../styles/news.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<img src="../images/eafc24.png" alt="EA FC LOGO" height="80">
+		<h1>EA FC 24</h1>
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="../index.html">Home</a></li>
+        	<li><a href="../content/content.html" >Content</a></li>
+        	<li><a href="news.html"class="current">News</a></li>
+        	<li><a href="../questions/questions.html">Questions</a></li>
+        	<li><a href="#">About Us</a></li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>CROSS-PLAY UPDATE</h2>
+			<p>In EA SPORTS FC™ 24, cross-play is expanding into all multiplayer online modes.
+                 Players will now be able to team up with their cross-platform friends as well as play 
+                 against mixed cross-platform teams across all modes where crossplay is available.
+                </p>
+			
+			<h1>EA connect will continue to be the main social hub where you will be able to manage game invites and your friends across platforms.</h1>
+			<article>
+				<img src="../images/news.jpg" alt="News">
+				<p>When entering EA SPORTS FC™ 24 for the first time cross-play will be enabled by default, 
+                    unless otherwise prohibited by your personal settings. 
+                    To send game invites, this will be the same as last year: You will interact with the full EA connect view 
+                    in Clubs and Volta Football to invite your friends
+                </p>
+			</article>
+		</section>
+		<aside>
+			<h2>Other News</h2>
+			<div id="speakers">
+			<ul>
+				<li><a href="#">Gameplay Deep Dive</a></li>
+				<li><a href="#">Ultimate Team Deep Dive</a></li>
+                <li><a href="#">Career Deep Dive</a></li>
+                <li><a href="#">Clubs Deep Dive</a></li>
+                <li><a href="../pdf/fgs23-official-rules.pdf">Rules PDF</a></li><br>
+			</ul>
+			<section>
+			<p>Ea Sports Sound</p>
+			<audio id="audioplayer"
+				src="../audio/EA Sports Sound.mp3"
+				controls
+				width="200" height="200"></audio>
+			</section>
+			<section>
+			<p>Ea FC 24 Trailer</p>
+			<video  id="videoplayer"
+				src="../video/eafctrailer.mp4"
+				controls
+				preload="auto"
+				width="220" height="130">
+			</video>
+
+			</section>
+		</aside>
+	</main>
+	
+	<footer>
+		<p>&copy; 2024 Electronic Arts Inc.</p>
+	</footer>
+</body>
+</html>

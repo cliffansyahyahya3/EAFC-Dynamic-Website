@@ -1,0 +1,246 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+/* change to 12 column grid concept for body element in desktop layout */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;                    
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid rgb(160, 118, 118);
+    background-color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, auto) / repeat(12, 1 fr); 
+	grid-gap: 0;
+    grid-template-areas:
+        "head head"
+        "navi navi"
+        "main main"
+        "foot foot";
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1em 0 .5em 0;
+	border-bottom: 0.2em solid transparent;
+	background-image: linear-gradient(
+	    30deg, whitesmoke 0%, rgb(160, 118, 118) 30%, white 50%, rgb(160, 118, 118) 80%,white 100%);
+    grid-area: head;
+}
+header h1 {
+	font-size: 175%;
+	color: greenyellow;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the navigation menu */
+#nav_menu {
+    grid-area: navi;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    align-content: center;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color:tan;
+    color: rgb(160, 118, 118);
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: blue;
+}
+/* the styles for the main content */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 30% auto;
+    grid-gap: 2.5%;
+    grid-template-areas:
+        "side sec";
+}
+
+/* the styles for the section */
+section {
+	padding: 0 3.7% 20px 0;
+    grid-area: sec;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+    color: rgb(160, 118, 118);
+}
+section h2 {
+	color: rgb(160, 118, 118);
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid tan;
+	border-bottom: 2px solid tan;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+    color: rgb(160, 118, 118);
+}
+article img {
+	float: right;
+	max-width: 30%;
+	min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+	padding: 0 0 20px 8.3%;
+    grid-area: side;
+}
+aside h2 {
+	color: rgb(160, 118, 118);
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+    width: 40%;
+}
+aside ul{
+    padding-left: 1.2em;
+}
+aside ul li{
+    margin-bottom: .25em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: tan;
+    grid-area: foot;
+}
+footer p {
+	text-align: center;
+	color: rgb(160, 118, 118);
+	padding: 1em 0;
+}
+#mobile_menu {
+	display: none;
+}
+#audioplayer{
+	width: 100%;
+	margin-right: 5em;
+}
+
+/* screen widths 480px to 715px */
+@media only screen and (max-width: 767px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 200px 1fr 1 fr;
+        grid-template-rows: 80px 1 fr 1 fr 60px;
+    }
+	header img { float: none; }
+	header{grid-row: 1/2; grid-column: 1/12;}
+    header img {
+      float: none;
+    }
+    main {
+        width: 100%;
+        float: left;
+        margin-right: 0;
+        margin-left: -10%;
+        margin-bottom: 0;
+        grid-row: 3/3; grid-column: 1/4;
+    }
+	section {
+        margin-right: 40%;
+        width: 100%;
+	}
+	aside {
+		width: 90%;
+        float: none;
+        grid-row: 2/3; grid-column: 1/12;
+	}
+    aside h2{
+        margin-left: 2em;
+    }
+    aside ul{
+        margin-left: 2em;
+    }
+	footer{grid-row: 5/5; grid-column: 1/12;}
+	article img { max-width: 30%; }
+	#speakers {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+        grid-row:2/2; grid-column: 1/12;
+	}
+	#mobile_menu ul, #mobile_menu a {
+		background-color: tan !important;
+	}
+	.slicknav_menu {
+		background-color: tan !important;
+        padding: 3px;
+	}
+	
+}
+
+/* screen widths 479 and less */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}

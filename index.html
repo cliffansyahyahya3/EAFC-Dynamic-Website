@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EA FC 24</title>
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/currentDate.js"></script>
+	<script src="js/printPage.js"></script>
+	<script src="js/slideShow.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<img src="images/eafc24.png" alt="EA FC LOGO" height="80">
+		<h1>EA FC 24</h1>
+		
+	</header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="content/content.html">Content</a></li>
+        	<li><a href="news/news.html">News</a></li>
+        	<li><a href="questions/questions.html">Questions</a></li>
+        	<li><a href="#">About Us</a></li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>WELCOME TO THE CLUB</h2>
+			<h3><p id="current_date"></p></h3>
+			<button onclick="printPage()">Print home page</button>
+			<p>EA SPORTS FC™ is here—the next chapter in The World's Game. 
+				Join us in building the future of football on a foundation of innovation and authenticity 
+				with more than 19,000 fully licensed players, 700 teams, and 30 leagues.</p>
+			<h2>THE WORLD’S GAME</h2>
+			<p>The EA SPORTS FC platform is home to the biggest competitions, leagues, and players across the men's and women's game.</p>
+			<p>Premier League, UEFA Champions League, UEFA Women's Champions League, 
+			LALIGA EA SPORTS, Bundesliga, Ligue 1, Serie A, CONMEBOL Libertadores, Barclays Women's Super League,
+			NWSL and many more are partners of EA SPORTS FC.</p>
+			<p>Created for fans by fans, EA SPORTS FC is a new Football Club for the future of football we want to build together.
+				Our new brand identity is inspired by the triangles that have been part of EA SPORTS football for the past 30 years, 
+				from the isometric polygons that make up our game to the chemistry triangles that 
+				exist in Ultimate Team™ to the player indicator across every match.</p>
+			
+			
+			<h1>A PLAN TO INVEST $10M GLOBALLY TO GROW COMMUNITY FOOTBALL</h1>
+			<article>
+				<img src="images/fcfutures.jpg" alt="FC FUTURES">
+				<h3>FCFUTURES</h3>
+				<p>FC FUTURES is a plan to meaningfully invest in the World’s 
+					Game with the purpose of growing football for all. The plan will see $10 million invested over 
+					the next three years across multiple community-level football projects.
+                </p>
+			</article>
+		</section>
+
+		<section>
+			<table>
+			
+				<thead>
+					
+					<tr>
+						<th>Event</th>	
+						<th>Date</th>
+						<th>Time</th>	
+						<th id="right">Number of Winners</th>
+					</tr>
+				</thead>
+					<tr>
+						<th rowspan="3">Group Stage</th>	
+						<td>November 27, 2023</td>	
+						<td>6PM UTC</td>	
+						<td id="right">4</td>
+					</tr>
+					<tr>
+						<td>December 4, 2023</td>	
+						<td>6PM UTC</td>	
+						<td id="right">3</td>
+					</tr>
+					<tr>
+						<td>December 11, 2023</td>	
+						<td>6PM UTC</td>	
+						<td id="right">2</td>
+					</tr>
+					</table>
+					<p id="image1"></p>
+
+		</section>
+
+		<section id="slideShowImages">
+			<h2>FIFAe World Cup Winners Showcase</h2>
+			<h3 id="caption"></h3>
+			<img id="slide" src="images/fifaEWorldCup.webp" alt="">
+			<div id="slides">
+				<img src="images/umut.jpg" alt="2022 winner: Umut">
+				<img src="images/MoAuba.jpg" alt="2019 winner: MoAuba">
+				<img src="images/msDossary.jpg" alt="2018 winner: Msdossary">
+				
+				
+			</div>
+		</section>
+	</main>
+
+	<aside>
+		<h2>Promos</h2>
+		<div id="speakers">
+		<ul>
+			<li><h3>Team Of The Year</h3>
+			<img src="images/TOTY.jpg" alt="TOTY"></li>
+			<li><h3>Future Stars</h3>
+			<img src="images/future stars.webp" alt="Future Stars"></li>
+			<li><h3>Fire and Ice</h3>
+			<img src="images/fireice.jpg" alt="fire and ice"></li>
+			<li><h3>Fut Birthday</h3>
+			<img src="images/futBirthday.jpg" alt="Fut Birthday"></li>
+		</ul>
+	</aside>
+	<footer>
+		<p>&copy; 2024 Electronic Arts Inc.</p>
+	</footer>
+</body>
+</html>
