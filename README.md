@@ -12,8 +12,9 @@ Dynamic website using HTML, CSS, JavaScript
 
 EA FC 24 Website (HTML, CSS, JavaScript)
 
-    This project is a multi-page website created using HTML and CSS, with JavaScript and jQuery used for basic interactivity. 
-  The site is themed around EA SPORTS FC 24 (A game I was heavily playing at the time) and was built to practice front-end web development fundamentals and page structure.
+This project is a multi-page website created using HTML and CSS, with JavaScript and jQuery used for basic interactivity. 
+
+The site is themed around EA SPORTS FC 24 (A game I was heavily playing at the time) and was built to practice front-end web development fundamentals and page structure.
 
 Project Purpose
 
