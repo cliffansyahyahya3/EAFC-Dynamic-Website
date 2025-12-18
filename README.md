@@ -14,9 +14,9 @@ Project Purpose
 
 Features
 
-| Home Page | Content Page | News Page |
+| Content Page | News Page | Questions Page |
 | :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/2d6ec335-c200-4651-98ca-a969f03684ed" width="300"> | <img src="https://github.com/user-attachments/assets/afde60b5-fb8a-4d9d-a51a-349deea3bb36" width="300"> | <img src="https://github.com/user-attachments/assets/d578becf-47db-42ea-9fd2-0ee92fc37002" width="300"> |
+| <img src="https://github.com/user-attachments/assets/2d6ec335-c200-4651-98ca-a969f03684ed" width="500"> | <img src="https://github.com/user-attachments/assets/afde60b5-fb8a-4d9d-a51a-349deea3bb36" width="500"> | <img src="https://github.com/user-attachments/assets/d578becf-47db-42ea-9fd2-0ee92fc37002" width="500"> |
 
   - Responsive navigation menu using jQuery SlickNav
 
